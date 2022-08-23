@@ -1,8 +1,14 @@
  import React from 'react'
+import Footer from './Footer'
+import Navbar from './Navbar'
  
- function Layout() {
+ function Layout({children}) {
    return (
-     <div>Layout</div>
+     <div className='content'>
+        <Navbar/>
+        {children}
+        <Footer/>
+     </div>
    )
  }
  

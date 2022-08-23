@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <p>Copyright 2021 Ninja List</p>
+    <footer>Copyright 2021 Ninja List</footer>
   )
 }
 
