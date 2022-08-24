@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import styles from '../../styles/Customers.module.css'
 
@@ -19,12 +20,12 @@ function Customers({customers}) {
         <h1>All Customers</h1>
         {
           customers.map((customer)=>(
-            <div key={customer.id}>
+            <Link href={'/customers/' + customer.id} key={customer.id}>
               <a className={styles.single} >
                 <h3>{customer.name}</h3>
               </a>
 
-            </div>
+            </Link>
           ))
         }
 
