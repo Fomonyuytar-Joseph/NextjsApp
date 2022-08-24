@@ -14,6 +14,8 @@ export const getStaticProps = async ()=>{
 
 
 
+
+
 function Customers({customers}) {
   return (
     <div>
